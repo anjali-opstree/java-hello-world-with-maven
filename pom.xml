@@ -42,6 +42,9 @@
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
                     <failOnViolation>true</failOnViolation>
+                    <!-- Generate Checkstyle HTML report -->
+                    <format>html</format>
+                    <outputDirectory>${project.build.directory}/checkstyle-reports</outputDirectory>
                 </configuration>
             </plugin>
 
