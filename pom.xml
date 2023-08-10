@@ -45,10 +45,6 @@
                     <consoleOutput>true</consoleOutput>
                     <!-- Specify the output directory for HTML report -->
                     <outputDirectory>${project.build.directory}/checkstyle-reports</outputDirectory>
-                    <!-- Configure the format of the generated report -->
-                    <formatters>
-                        <formatter>html</formatter>
-                    </formatters>
                     <!-- Always generate Checkstyle report, even if there are no violations -->
                     <failsOnError>false</failsOnError>
                 </configuration>
