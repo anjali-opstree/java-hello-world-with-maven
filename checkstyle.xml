@@ -7,8 +7,7 @@
     <!-- Use the default Sun checks as an example -->
     <module name="JavadocMethod">
         <property name="scope" value="public" />
-        <property name="allowMissingParamTags" value="true" />
-        <property name="allowMissingThrowsTags" value="true" />
+        <property name="allowMissing" value="true" />
         <!-- Add more JavadocMethod configuration if needed -->
     </module>
 
