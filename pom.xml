@@ -29,7 +29,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.1.1</version>
+                <!-- Use the latest version of the Checkstyle plugin -->
+                <version>3.1.2</version>
                 <executions>
                     <execution>
                         <id>validate</id>
@@ -44,8 +45,6 @@
                     <consoleOutput>true</consoleOutput>
                     <!-- Specify the output directory for HTML report -->
                     <outputDirectory>${project.build.directory}/checkstyle-reports</outputDirectory>
-                    <logViolationsToConsole>true</logViolationsToConsole>
-                    <logViolationsToConsoleOnErrors>true</logViolationsToConsoleOnErrors>
                     <!-- Configure the format of the generated report -->
                     <formatters>
                         <formatter>html</formatter>
