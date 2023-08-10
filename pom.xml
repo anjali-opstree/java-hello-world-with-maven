@@ -42,6 +42,8 @@
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
                     <failOnViolation>true</failOnViolation>
+                    <!-- Generate Checkstyle HTML report -->
+                    <outputDirectory>${project.build.directory}/checkstyle-reports</outputDirectory>
                 </configuration>
             </plugin>
 
@@ -69,15 +71,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <!-- Configure Maven Site Plugin for Checkstyle report -->
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.14</version>
-            </plugin>
-        </plugins>
-    </reporting>
 </project>
