@@ -4,19 +4,13 @@
 <module name="Checker">
     <property name="severity" value="warning" />
 
-    <!-- Define your Checkstyle rules here -->
-    <module name="TreeWalker">
-        <!-- Example: Use the default Sun checks -->
-        <module name="Checker">
-            <module name="TreeWalker">
-                <module name="JavadocMethod">
-                    <property name="scope" value="public" />
-                    <property name="allowMissingParamTags" value="true" />
-                    <property name="allowMissingThrowsTags" value="true" />
-                    <!-- Add more JavadocMethod configuration if needed -->
-                </module>
-                <!-- Add more Checkstyle rules if needed -->
-            </module>
-        </module>
+    <!-- Use the default Sun checks as an example -->
+    <module name="JavadocMethod">
+        <property name="scope" value="public" />
+        <property name="allowMissingParamTags" value="true" />
+        <property name="allowMissingThrowsTags" value="true" />
+        <!-- Add more JavadocMethod configuration if needed -->
     </module>
+
+    <!-- Add more Checkstyle rules/modules if needed -->
 </module>
